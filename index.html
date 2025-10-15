@@ -11,11 +11,8 @@
 	</head>
 
 	<body>
-		<header>
-			<img src="./images/images.jpeg" alt="Dodgy Dave's Stock Predictions">
-		</header>
-		<main>
-			<section class="action-panel">
+	<main class="main-div">
+		    <section class="action-panel card">
 				<form id="ticker-input-form">
 					<label for="ticker-input"> Add up to 3 stock tickers below to get a super accurate stock predictions report👇 </label>
 					<div class="form-input-control">
@@ -33,11 +30,11 @@
 				</button>
 				<p class="tag-line">Always correct 15% of the time!</p>
 			</section>
-			<section class="loading-panel">
+			<section class="loading-panel card">
 				<img src="images/loader.svg" alt="loading">
-				<div id="api-message">Querying Stocks API...</div>
+				<div id="api-message" aria-live="polite">Querying Stocks API...</div>
 			</section>
-			<section class="output-panel">
+			<section class="output-panel card">
 				<h2>Your Report 😜</h2>
 			</section>
 		</main>
